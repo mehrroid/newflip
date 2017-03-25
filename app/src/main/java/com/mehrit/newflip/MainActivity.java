@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i=0;i<3;i++) {
             createTextViews(1, 2);
         }
+        
         mainFrameLayout.addView(frameLayout);
         loadAnimations();
         changeCameraDistance();
