@@ -74,8 +74,11 @@ public class MainActivity extends AppCompatActivity {
 //        frameLayout.addView(front);
         mainFrameLayout.addView(frameLayout);
         */
-
-        createTextViews(1,2);
+        mainFrameLayout.removeAllViews();
+        for (int i=0;i<3;i++) {
+            createTextViews(1, 2);
+        }
+        mainFrameLayout.addView(frameLayout);
         loadAnimations();
         changeCameraDistance();
     }
@@ -122,7 +125,6 @@ public class MainActivity extends AppCompatActivity {
 //        imgBack.setBackgroundResource(R.drawable.rectangle);
         frameLayoutBack.addView(imgBack);
         frameLayout.addView(frameLayoutBack);
-        mainFrameLayout.addView(frameLayout);
 
         return frameLayout;
     }
